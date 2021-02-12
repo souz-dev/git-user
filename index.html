@@ -13,13 +13,35 @@
 </head>
 
 <body>
-<main class="container">
-    <div class="buscar">
+  
+<section class=" container content">
+       <div class="buscar-header">
         <h1>Git-User</h1>
         <p>Escontre aqui informações sobre o usuario</p>
-      
+    
+        <div class="input-group mb-3">
+            <input id="username" type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2">Buscar</button>
+            </div>
+          </div>
+        </div>
     </div>
-</main>
+    <main class='main'>
+        <div id='containerInfos'>    
+            <a id='avatarBlank' href="" target="_blank" rel="noopener noreferrer"><img id='avatar_url' src="" alt="Imagem de Perfil"></a>
+            <div id='userDates'>
+                <h2 id='login'></h2>
+                <div id='dates'>
+                    <p id='created_at'></p>
+                    <p>  &ensp; Criado! &ensp; |  &ensp; Último acesso! &ensp;</p>
+                    <p id='updated_at'></p>
+                </div>
+            </div>
+        </div>
+        <p id='bio'></p>
+    </main>
+</section>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
